@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Exercise2">
+    <classes>
+      <class name="com.rubikloud.qa.test.AutopilotPageTest">
+        <methods>
+          <include name="priceIncrementTest"/>
+        </methods>
+      </class> <!-- com.rubikloud.qa.test.AutopilotPageTest -->
+      <class name="com.rubikloud.qa.test.CarbonImpactPageTest">
+        <methods>
+          <include name="co2SavedRankingTest"/>
+        </methods>
+      </class> <!-- com.rubikloud.qa.test.CarbonImpactPageTest -->
+    </classes>
+  </test> <!-- Exercise2 -->
+  <test name="Exercise2(failed)">
+    <classes>
+      <class name="com.rubikloud.qa.test.CarbonImpactPageTest">
+        <methods>
+          <include name="co2SavedRankingTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.rubikloud.qa.test.CarbonImpactPageTest -->
+      <class name="com.rubikloud.qa.test.AutopilotPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.rubikloud.qa.test.AutopilotPageTest -->
+    </classes>
+  </test> <!-- Exercise2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

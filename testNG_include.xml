@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Exercise2">
+		<classes>
+			<class name="com.rubikloud.qa.test.AutopilotPageTest">
+				<methods>
+					<include name="priceIncrementTest"></include>
+				</methods>
+			</class>
+			<class name="com.rubikloud.qa.test.CarbonImpactPageTest">
+				<methods>
+					<include name="co2SavedRankingTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
